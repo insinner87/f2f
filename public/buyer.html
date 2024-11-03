@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2F Global Exports - Farmer Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(horses.jpg); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    color: #333;
+}
+
+header {
+    background-color: rgba(96, 175, 76, 0.9); /* Semi-transparent green */
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+section {
+    margin: 1em auto;
+    max-width: 600px;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for sections */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+        /* Header styling */
+        header {
+            width: 100%;
+            background: linear-gradient(90deg, #4CAF50, #66BB6A);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        /* Navigation styling */
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #061607;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Section styling */
+        section {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h3 {
+            font-size: 1.8em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form button {
+            font-size: 1em;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        form button:hover {
+            background-color: #010c01;
+        }
+
+        /* Benefits list styling */
+        #benefits ul, #buyers ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        #benefits li, #buyers li {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Media Query for Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header h2 {
+                font-size: 1.2em;
+            }
+
+            section h3 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>F2F Global Exports</h1>
+        <h2>For Farmers</h2>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="farmer.html">Farmers</a>
+        <a href="buyer.html">Buyers</a>
+    </nav>
+
+
+    <section id="benefits">
+        <h3>Benefits of Partnering with Us</h3>
+        <ul>
+            <li>Fair pricing and transparent process</li>
+            <li>Access to international markets</li>
+            <li>Loans at low interest rates</li>
+            <li>Quality support and logistics assistance</li>
+        </ul>
+    </section>
+
+    <!-- New Buyers Section -->
+    <section id="buyers">
+        <h3>Buyers Portal</h3>
+        <p>Join our network of buyers to access quality agricultural products directly from farmers.</p>
+        <h4>Benefits of Buying with Us:</h4>
+        <ul>
+            <li>Access to fresh and organic produce</li>
+            <li>Competitive pricing</li>
+            <li>Direct communication with farmers</li>
+            <li>Reliable logistics and delivery options</li>
+        </ul>
+
+        <h4>Register as a Buyer</h4>
+        <form id="buyerRegistrationForm">
+            <label for="buyerName">Your Name:</label>
+            <input type="text" id="buyerName" placeholder="Your Name" required aria-label="Your Name">
+            <label for="buyerEmail">Your Email:</label>
+            <input type="email" id="buyerEmail" placeholder="Your Email" required aria-label="Your Email">
+            <label for="buyerLocation">Location:</label>
+            <input type="text" id="buyerLocation" placeholder="Your Location" required aria-label="Your Location">
+            <button type="submit">Register Now</button>
+        </form>
+    </section>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

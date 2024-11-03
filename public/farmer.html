@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2F Global Exports - Farmer Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(horses.jpg); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(76, 175, 80, 0.9); /* Semi-transparent green */
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            margin: 0.5em 0;
+        }
+
+        section {
+            margin: 1em auto;
+            max-width: 600px;
+            padding: 1em;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for sections */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, button {
+            margin: 0.5em 0;
+            padding: 0.5em;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #4CAF50;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Query for Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header h2 {
+                font-size: 1.2em;
+            }
+
+            section h3 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>F2F Global Exports</h1>
+        <h2>For Farmers</h2>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="farmer.html">Farmers</a>
+        <a href="buyer.html">Buyers</a>
+    </nav>
+
+    <section id="apply-dealership">
+        <h3>Apply to Sell Your Products</h3>
+        <form id="dealerApplicationForm">
+            <label for="farmerName">Your Name:</label>
+            <input type="text" id="farmerName" placeholder="Your Name" required aria-label="Your Name">
+            <label for="farmLocation">Farm Location:</label>
+            <input type="text" id="farmLocation" placeholder="Farm Location" required aria-label="Farm Location">
+            <button type="submit">Apply Now</button>
+        </form>
+    </section>
+
+    <section id="benefits">
+        <h3>Benefits of Partnering with Us</h3>
+        <ul>
+            <li>Fair pricing and transparent process</li>
+            <li>Access to international markets</li>
+            <li>Loans at low interest rates</li>
+            <li>Quality support and logistics assistance</li>
+        </ul>
+    </section>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
